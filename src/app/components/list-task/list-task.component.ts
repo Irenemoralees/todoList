@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TaskComponent } from "../task/task.component";
+import { Task } from '../../interfaces/task';
 
 @Component({
   selector: 'app-list-task',
@@ -9,5 +10,5 @@ import { TaskComponent } from "../task/task.component";
   styleUrl: './list-task.component.css'
 })
 export class ListTaskComponent {
-
+@Input() listTask! : Task[];
 }
