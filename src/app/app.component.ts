@@ -13,4 +13,10 @@ import { Task } from './interfaces/task';
 })
 export class AppComponent {
 listTask : Task[] = [{text: "Ir al gym", state: true}, {text: "Hacer la cama", state: false}]
+
+tareaEnviada(msg: string) {
+  if(this.listTask.find(tarea=> tarea.text === msg)===undefined){
+  this.listTask.push({text: msg, state: false})
+  }
+}
 }

@@ -1,5 +1,5 @@
 
 <div>
-    <input type="text" placeholder="Inserta aquí tu tarea">
-    <button>➕​</button>
+    <input [(ngModel)]="newText" type="text" placeholder="Inserta aquí tu tarea">
+    <button (click)="enviarTarea()">➕​</button>
 </div>
